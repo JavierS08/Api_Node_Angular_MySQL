@@ -1,0 +1,7 @@
+{
+  "name": "hitoind",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Insert</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Vamos a insertar un Equipo</h1>
+  <form>
+    <div>
+      <ion-item>
+      <ion-label position="floating">Nombre del Equipo</ion-label>
+      <ion-input [(ngModel)]="equipo.nombre" type="text" name="nombre"  placeholder="Enter nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+      <ion-label position="floating">Logo(URL)</ion-label>
+      <ion-input [(ngModel)]="equipo.logo" type="text" name="logo"  placeholder="Enter logo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Pais</ion-label>
+      <ion-input [(ngModel)]="equipo.pais" type="text" name="pais"  placeholder="Enter país"></ion-input>
+    </ion-item>
+    </div>
+    <ion-button (click)="agregar()">Agregar</ion-button>
+  </form>
+</ion-content>
